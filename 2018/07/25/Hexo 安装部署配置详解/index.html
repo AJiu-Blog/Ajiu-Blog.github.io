@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo 安装部署配置详解 | </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Hexo" />
+  
+
+  <!-- 站长平台收录 Begin -->
+
+  
+    <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
+  
+
+  
+    <meta name="baidu-site-verification" content="sKKGW53Z6M" />
+  
+
+  
+    <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
+  
+
+  <!-- 站长平台收录 End -->
+
+  <meta name="description" content="hexo API 一站安装https:&#x2F;&#x2F;blog.csdn.net&#x2F;erchowyo&#x2F;article&#x2F;details&#x2F;54407601 安装 hexo$ npm install -g hexo 初始化 hexo$ hexo init 安装 hexo 依赖$ npm install 生成 hexo 资源$ hexo generate hexo 服务$ hexo server  hiker: hex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 安装部署配置详解">
+<meta property="og:url" content="http://100wb.cn/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="hexo API 一站安装https:&#x2F;&#x2F;blog.csdn.net&#x2F;erchowyo&#x2F;article&#x2F;details&#x2F;54407601 安装 hexo$ npm install -g hexo 初始化 hexo$ hexo init 安装 hexo 依赖$ npm install 生成 hexo 资源$ hexo generate hexo 服务$ hexo server  hiker: hex">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-07-24T18:39:17.000Z">
+<meta property="article:modified_time" content="2020-05-02T15:41:45.521Z">
+<meta property="article:author" content="AJiu">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+	
+	// 绑定关闭搜索框设置外部滚动条有效
+	$('i.fa-times-circle').on("click",function(){ 
+		document.documentElement.style.overflow = 'scroll'; 
+	});	
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+</li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+<style type="text/css">
+	
+	.menu_active{ border-bottom: 5px solid #39aa56; }
+	.menu_active:hover{ border-bottom: 0px; }
+</style>
+
+<script type="text/javascript">
+	
+
+	$('ul.hnav li').each(function(i, v){
+		if(i>0 && i < 5){
+			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
+				$(v).addClass('menu_active');
+			}
+		}
+	});
+</script>
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Hexo 安装部署配置详解" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Hexo 安装部署配置详解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/" class="article-date">
+	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="hexo-API-一站安装"><a href="#hexo-API-一站安装" class="headerlink" title="hexo API 一站安装"></a>hexo API 一站安装</h1><p><a href="https://blog.csdn.net/erchowyo/article/details/54407601" target="_blank" rel="noopener">https://blog.csdn.net/erchowyo/article/details/54407601</a></p>
+<h1 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h1><p>$ npm install -g hexo</p>
+<h1 id="初始化-hexo"><a href="#初始化-hexo" class="headerlink" title="初始化 hexo"></a>初始化 hexo</h1><p>$ hexo init</p>
+<h1 id="安装-hexo-依赖"><a href="#安装-hexo-依赖" class="headerlink" title="安装 hexo 依赖"></a>安装 hexo 依赖</h1><p>$ npm install</p>
+<h1 id="生成-hexo-资源"><a href="#生成-hexo-资源" class="headerlink" title="生成 hexo 资源"></a>生成 hexo 资源</h1><p>$ hexo generate</p>
+<h1 id="hexo-服务"><a href="#hexo-服务" class="headerlink" title="hexo 服务"></a>hexo 服务</h1><p>$ hexo server </p>
+<h1 id="hiker-hexo-theme-API"><a href="#hiker-hexo-theme-API" class="headerlink" title="hiker: hexo-theme API"></a>hiker: hexo-theme API</h1><p><a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank" rel="noopener">https://github.com/iTimeTraveler/hexo-theme-hiker</a></p>
+<h1 id="创建SSH密钥"><a href="#创建SSH密钥" class="headerlink" title="创建SSH密钥"></a>创建SSH密钥</h1><p>ssh-keygen -t rsa -C “<a href="mailto:adcc_ajiu_2013qc@163.com">adcc_ajiu_2013qc@163.com</a>“</p>
+<h1 id="开启-ssh-add"><a href="#开启-ssh-add" class="headerlink" title="开启 ssh-add"></a>开启 ssh-add</h1><p>eval <code>ssh-agent -s</code></p>
+<h1 id="添加密钥"><a href="#添加密钥" class="headerlink" title="添加密钥"></a>添加密钥</h1><p>ssh-add github</p>
+<p>#<br>ssh-keygen -t rsa -C “<a href="mailto:adcc_ajiu_2013qc@163.com">adcc_ajiu_2013qc@163.com</a>“<br>#<br>eval <code>ssh-agent -s</code><br>#<br>ssh-add github<br>#<br>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:AJiu-Blog/Ajiu-Blog.github.io.git</p>
+<h1 id="安装-全局-Hexo"><a href="#安装-全局-Hexo" class="headerlink" title="安装 全局 Hexo"></a>安装 全局 Hexo</h1><p>npm install -g hexo</p>
+<h1 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h1><p>hexo init</p>
+<h1 id="安装更新"><a href="#安装更新" class="headerlink" title="安装更新"></a>安装更新</h1><p>npm install hexo –save</p>
+<h1 id="安装-Hexo-Server"><a href="#安装-Hexo-Server" class="headerlink" title="安装 Hexo Server"></a>安装 Hexo Server</h1><p>npm install hexo-server</p>
+<h1 id="运行-Hexo-服务"><a href="#运行-Hexo-服务" class="headerlink" title="运行 Hexo 服务"></a>运行 Hexo 服务</h1><p>hexo s / hexo server</p>
+<h1 id="安装-Hexo-提交方式为-Git"><a href="#安装-Hexo-提交方式为-Git" class="headerlink" title="安装 Hexo 提交方式为 Git"></a>安装 Hexo 提交方式为 Git</h1><p>npm install hexo-deployer-git –save</p>
+<h1 id="Hexo-环境配置"><a href="#Hexo-环境配置" class="headerlink" title="Hexo 环境配置"></a>Hexo 环境配置</h1><pre><code>1.手动初始化 Hexo init
+
+2.覆盖 public，source，tag_config，themes，_config.yml 文件/夹
+
+2.使用搜索功能前必须在Hexo目录下使用以下命令安装 hexo-generator-json-content 插件.
+
+    npm install -S hexo-generator-json-content</code></pre><h1 id="构建-Hexo-环境"><a href="#构建-Hexo-环境" class="headerlink" title="构建 Hexo 环境"></a>构建 Hexo 环境</h1><pre><code>1. npm install hexo --save</code></pre><h1 id="Hexo-常用语句"><a href="#Hexo-常用语句" class="headerlink" title="Hexo 常用语句"></a>Hexo 常用语句</h1><pre><code>创建文件
+$ hexo new [layout] &lt;title&gt;
+
+创建文件
+$ hexo new page [layout] &lt;title&gt;</code></pre><h1 id="Hexo-使用填坑记录"><a href="#Hexo-使用填坑记录" class="headerlink" title="Hexo 使用填坑记录"></a>Hexo 使用填坑记录</h1><blockquote>
+<p>填坑记录API <a href="https://blog.csdn.net/hosea1008/article/details/53404632" target="_blank" rel="noopener">https://blog.csdn.net/hosea1008/article/details/53404632</a></p>
+<blockquote>
+<p>添加node_modules文件目录太深<br>node_modules/****: Filename too long<br>在Stackoverflow上面找到了答案，这是由于Windows API限制了文件名长度为260字符造成的<br>执行以下指令<br>git config –system core.longpaths true</p>
+</blockquote>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '/css/images/WeChanQR.png',
+  alipayImage: '/css/images/AliPayQR.jpg'
+});
+</script>
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>本文作者:  </strong>AJiu</a>
+          </li>
+          <li class="post-copyright-link">
+          <strong>本文链接:  </strong>
+          <a href="/2018/07/25/Hexo 安装部署配置详解/" target="_blank" title="Hexo 安装部署配置详解">http://100wb.cn/2018/07/25/Hexo 安装部署配置详解/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>版权声明:   </strong>
+            本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            许可协议。转载请注明出处
+          </li>
+         
+        </ul>
+<div>
+
+      
+      
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          Java 知识点总结篇章
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/04/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-API-一站安装"><span class="nav-number">1.</span> <span class="nav-text">hexo API 一站安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化-hexo"><span class="nav-number">3.</span> <span class="nav-text">初始化 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo-依赖"><span class="nav-number">4.</span> <span class="nav-text">安装 hexo 依赖</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成-hexo-资源"><span class="nav-number">5.</span> <span class="nav-text">生成 hexo 资源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-服务"><span class="nav-number">6.</span> <span class="nav-text">hexo 服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hiker-hexo-theme-API"><span class="nav-number">7.</span> <span class="nav-text">hiker: hexo-theme API</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建SSH密钥"><span class="nav-number">8.</span> <span class="nav-text">创建SSH密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开启-ssh-add"><span class="nav-number">9.</span> <span class="nav-text">开启 ssh-add</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加密钥"><span class="nav-number">10.</span> <span class="nav-text">添加密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-全局-Hexo"><span class="nav-number">11.</span> <span class="nav-text">安装 全局 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">12.</span> <span class="nav-text">初始化 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装更新"><span class="nav-number">13.</span> <span class="nav-text">安装更新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo-Server"><span class="nav-number">14.</span> <span class="nav-text">安装 Hexo Server</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行-Hexo-服务"><span class="nav-number">15.</span> <span class="nav-text">运行 Hexo 服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo-提交方式为-Git"><span class="nav-number">16.</span> <span class="nav-text">安装 Hexo 提交方式为 Git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-环境配置"><span class="nav-number">17.</span> <span class="nav-text">Hexo 环境配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构建-Hexo-环境"><span class="nav-number">18.</span> <span class="nav-text">构建 Hexo 环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-常用语句"><span class="nav-number">19.</span> <span class="nav-text">Hexo 常用语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-使用填坑记录"><span class="nav-number">20.</span> <span class="nav-text">Hexo 使用填坑记录</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+		<!--
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+		-->
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+
+<style type="text/css">
+	#article-nav:before{ background: #999999; }      
+	.article-nav-caption{ color: #999999; }
+</style>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+  
+<script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+
+<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            
+          </div>
+          <div class="panel-body">
+            Copyright © 2020 AJiu All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
