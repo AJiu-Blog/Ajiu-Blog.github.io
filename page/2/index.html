@@ -206,9 +206,9 @@
         })
         .then(function (data) {
           if (subtitleEffect) {
-            var from = '出自 ' + data.from + '^1500'
+            var from = '出自 ' + data.from
             var sub = '^1000如果在这里退缩了一步<br/><br/> ^1500 那么过去那些重要的誓言，约定，全部都消失会不见<br/><br/> ^1500 而我再也无法回到这里<br/><br/> ^1500 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;-&ensp;罗罗诺亚&ensp;·&ensp;索隆'.length == 0 ? new Array() : '^1000如果在这里退缩了一步<br/><br/> ^1500 那么过去那些重要的誓言，约定，全部都消失会不见<br/><br/> ^1500 而我再也无法回到这里<br/><br/> ^1500 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;-&ensp;罗罗诺亚&ensp;·&ensp;索隆'.split(',')
-            var both = sub.unshift(data.hitokoto, from)
+            var both = sub.unshift(data.hitokoto + '^2000', from)
             var typed = new Typed('#subtitle', {
               strings: sub,
               startDelay: 300,
