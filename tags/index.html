@@ -6,23 +6,15 @@
   <title>标签 | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-
-  <!-- 站长平台收录 Begin -->
-
   
     <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
   
-
   
     <meta name="baidu-site-verification" content="sKKGW53Z6M" />
   
-
   
     <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
   
-
-  <!-- 站长平台收录 End -->
-
   <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http://100wb.cn/tags/index.html">
@@ -45,12 +37,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -120,15 +114,15 @@
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 
-                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -162,19 +156,13 @@
         CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-	
-	// 绑定关闭搜索框设置外部滚动条有效
-	$('i.fa-times-circle').on("click",function(){ 
-		document.documentElement.style.overflow = 'scroll'; 
-	});	
 })(window);
 </script>
 
 <script src="/js/insight.js"></script>
 
 
-</div>
-</li>
+</div></li>
             </div>
           </div>
                 
@@ -184,24 +172,6 @@
 </header>
 
 
-
-<style type="text/css">
-	
-	.menu_active{ border-bottom: 5px solid #39aa56; }
-	.menu_active:hover{ border-bottom: 0px; }
-</style>
-
-<script type="text/javascript">
-	
-
-	$('ul.hnav li').each(function(i, v){
-		if(i>0 && i < 5){
-			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
-				$(v).addClass('menu_active');
-			}
-		}
-	});
-</script>
 
       
             
@@ -222,75 +192,75 @@
 var cloudwords = [];
 
 
-	cloudwords.push("测试工具");
+    cloudwords.push("测试工具");
 
-	cloudwords.push("Git");
+    cloudwords.push("Git");
 
-	cloudwords.push("java");
+    cloudwords.push("设计模式");
 
-	cloudwords.push("知识点总结");
+    cloudwords.push("算法核算");
 
-	cloudwords.push("Hexo");
+    cloudwords.push("大数据通缉");
 
-	cloudwords.push("设计模式");
+    cloudwords.push("Hello World");
 
-	cloudwords.push("算法核算");
+    cloudwords.push("Battery Related");
 
-	cloudwords.push("大数据通缉");
+    cloudwords.push("Billing");
 
-	cloudwords.push("Hello World");
+    cloudwords.push("Break Related");
 
-	cloudwords.push("Battery Related");
+    cloudwords.push("Chain Related");
 
-	cloudwords.push("Billing");
+    cloudwords.push("Clutch Related");
 
-	cloudwords.push("Break Related");
+    cloudwords.push("Dealer attitude");
 
-	cloudwords.push("Chain Related");
+    cloudwords.push("Electrical Related");
 
-	cloudwords.push("Clutch Related");
+    cloudwords.push("Engine Related");
 
-	cloudwords.push("Dealer attitude");
+    cloudwords.push("Handle Bar Related");
 
-	cloudwords.push("Electrical Related");
+    cloudwords.push("Happy");
 
-	cloudwords.push("Engine Related");
+    cloudwords.push("Jerking");
 
-	cloudwords.push("Handle Bar Related");
+    cloudwords.push("Jerking Problem");
 
-	cloudwords.push("Happy");
+    cloudwords.push("Low Mileage");
 
-	cloudwords.push("Jerking");
+    cloudwords.push("Noise");
 
-	cloudwords.push("Jerking Problem");
+    cloudwords.push("Poor Pickup");
 
-	cloudwords.push("Low Mileage");
+    cloudwords.push("Running Off");
 
-	cloudwords.push("Noise");
+    cloudwords.push("Service Quality");
 
-	cloudwords.push("Poor Pickup");
+    cloudwords.push("Silencer Problem");
 
-	cloudwords.push("Running Off");
+    cloudwords.push("Starting Trouble");
 
-	cloudwords.push("Service Quality");
+    cloudwords.push("Suspension Related");
 
-	cloudwords.push("Silencer Problem");
+    cloudwords.push("Vehicle Noise");
 
-	cloudwords.push("Starting Trouble");
+    cloudwords.push("Vibration");
 
-	cloudwords.push("Suspension Related");
+    cloudwords.push("Washing");
 
-	cloudwords.push("Vehicle Noise");
+    cloudwords.push("SpringBoot");
 
-	cloudwords.push("Vibration");
+    cloudwords.push("SpringClould");
 
-	cloudwords.push("Washing");
+    cloudwords.push("Hexo");
 
-	cloudwords.push("SpringBoot");
+    cloudwords.push("开发工具");
 
-	cloudwords.push("SpringClould");
+    cloudwords.push("java");
 
-	cloudwords.push("开发工具");
+    cloudwords.push("知识点总结");
 
 
 
@@ -385,7 +355,7 @@ d3.layout.cloud().size([width, height])
   .start();
 var w = 100, h = 100,ii=0;
 function drawCloud(words) {
-	var _mouseleave = '';
+    var _mouseleave = '';
   d3.select("#cloud").append("svg")
     .attr("width", w)
       .attr("height", h)
@@ -399,13 +369,13 @@ function drawCloud(words) {
     .style("font-family", "Impact")
     .style("font-weight", "bold") 
     .style("fill", function(d, i) {
-	// console.log(d.text+"-"+fill(i));
-	if(fill(i) != '#d62728' && fill(i) != '#2ca02c' && fill(i) != '#d62728'){
-		//console.log('#d62728'+"|"+fill(i));
+    // console.log(d.text+"-"+fill(i));
+    if(fill(i) != '#d62728' && fill(i) != '#2ca02c' && fill(i) != '#d62728'){
+        //console.log('#d62728'+"|"+fill(i));
       return fill(i);
-	}else{
+    }else{
       return fill(i*i);
-	}
+    }
     })
     .attr("text-anchor", "middle")
     .attr("transform", function(d) {
@@ -416,17 +386,17 @@ function drawCloud(words) {
     .on("click", function(d, i) {
       window.open("/tags/" + d.text.replace(/\s+/g,"-"), "_self");
     })
-	.on("mouseover", function(d, i) {
-		_mouseleave = $($(this)[0]).attr('style');
-		$($(this)[0]).attr('style','font-family: Impact; fill: rgb(247, 6, 55); font-size: 35px;');
+    .on("mouseover", function(d, i) {
+        _mouseleave = $($(this)[0]).attr('style');
+        $($(this)[0]).attr('style','font-family: Impact; fill: rgb(247, 6, 55); font-size: 35px;');
     })
-	.on("mouseleave", function(d, i) {
-		$($(this)[0]).attr('style', _mouseleave);
-		_mouseleave = '';
+    .on("mouseleave", function(d, i) {
+        $($(this)[0]).attr('style', _mouseleave);
+        _mouseleave = '';
     })
   
     .style("font-size", function(d) {
-//    	      return leaderScale(d.size) + "px";
+//            return leaderScale(d.size) + "px";
       return "30px";
     })
     
@@ -438,6 +408,10 @@ var svg = document.getElementsByTagName("svg")[0];
 var bbox = svg.getBBox();
 var viewBox = [bbox.x, bbox.y, bbox.width, bbox.height].join(" ");
 svg.setAttribute("viewBox", viewBox);
+
+$(function(){
+ $('#content')[0].style.height=$('#content')[0].clientHeight+document.documentElement.clientHeight-$('#content')[0].clientHeight-$('#footer')[0].clientHeight-91+'px';
+})
 
 // TODO
 </script>
@@ -451,10 +425,10 @@ svg.setAttribute("viewBox", viewBox);
   
 
   <div class="container">
-      	<div class="row">
-		<!--
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-		-->
+        <div class="row">
+        <!--
+        <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+         -->
 	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
 	      
 	      
@@ -484,12 +458,6 @@ svg.setAttribute("viewBox", viewBox);
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
-<style type="text/css">
-	#article-nav:before{ background: #999999; }      
-	.article-nav-caption{ color: #999999; }
-</style>
-
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -534,7 +502,7 @@ svg.setAttribute("viewBox", viewBox);
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -573,9 +541,6 @@ svg.setAttribute("viewBox", viewBox);
 
 
 
-
-
-<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
 
   </div>
 

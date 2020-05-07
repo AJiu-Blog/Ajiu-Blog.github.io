@@ -6,23 +6,15 @@
   <title>归档: 2018 | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-
-  <!-- 站长平台收录 Begin -->
-
   
     <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
   
-
   
     <meta name="baidu-site-verification" content="sKKGW53Z6M" />
   
-
   
     <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
   
-
-  <!-- 站长平台收录 End -->
-
   <meta property="og:type" content="website">
 <meta property="og:title">
 <meta property="og:url" content="http://100wb.cn/archives/2018/index.html">
@@ -43,12 +35,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -118,15 +112,15 @@
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 
-                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -160,19 +154,13 @@
         CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-	
-	// 绑定关闭搜索框设置外部滚动条有效
-	$('i.fa-times-circle').on("click",function(){ 
-		document.documentElement.style.overflow = 'scroll'; 
-	});	
 })(window);
 </script>
 
 <script src="/js/insight.js"></script>
 
 
-</div>
-</li>
+</div></li>
             </div>
           </div>
                 
@@ -183,116 +171,165 @@
 
 
 
-<style type="text/css">
-	
-	.menu_active{ border-bottom: 5px solid #39aa56; }
-	.menu_active:hover{ border-bottom: 0px; }
-</style>
-
-<script type="text/javascript">
-	
-		$("meta[property='og:title']").attr("content", "archives");;
-	
-
-	$('ul.hnav li').each(function(i, v){
-		if(i>0 && i < 5){
-			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
-				$(v).addClass('menu_active');
-			}
-		}
-	});
-</script>
-
       
             
       <div id="content" class="outer">
         
           <section id="main">
-  <div class="archives-tags-wrap"><blockquote><span>嗯，目前共计6篇文章</span></blockquote>
+  <div class="archives-tags-wrap"><blockquote style="line-height: 30px;"><span>嗯，目前共计6篇文章</span></blockquote>
 
 
 <!-- 分页显示 -->
 
 	
+
+
+	<div class="post-list-box archive-body" style="padding: 0 50px;">
+	    <ul class="list-post" style="position: relative;"> 
+			<ul class="list-post1" style="
+			    height: 100%;
+			    border-left: 4px solid #ececec;
+			    position: absolute;
+			       top: 16px;
+			"></ul>
+
 	
+
+	
+
 		
+
+		
+			
+		
+
+
+
 		
 		  
+		    <!--</div></section>-->
 		  
+		  
+		  <!--
 		  <section class="archives-wrap">
 		    <div class="archive-year-wrap">
-		      <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
+		      <h1><a href="" class="archive-year"></a></h1>
 		    </div>
 		    <div class="archives">
+		    -->
 		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/" class="archive-article-date">
-	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
-	</a>
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/">Java 知识点总结篇章</a>
-    </h1>
-  
+		
 
-    </header>
-  </div>
-</article>
+
+
+
+		
+
+			<!-- year -->
+			<li class="item-year item item-title item-title-0">
+			<i class="" style="border-left: 4px solid #ececec; position: absolute; left: 0; height: 28px; top: 17px; z-index: 998;"></i>
+			<a href="/archives/2018" class="text-year">2018<i class="icon-hou"></i></a>
+			</li>
+
+		
+
+		
+
+		
+				<!-- chind -->
+				<li class="item-post item">
+				  <span class="post-date">07-25</span>
+				  <a class="post-title archive-article-title" href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/">Hexo 安装部署配置详解</a>
+				</li>
+		
+
 	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
-	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
-	</a>
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/">Hexo 安装部署配置详解</a>
-    </h1>
-  
+		
 
-    </header>
-  </div>
-</article>
+		
+
+
+
+		
+		  
+		    <!--</div></section>-->
+		  
+		  
+		  <!--
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="" class="archive-year"></a></h1>
+		    </div>
+		    <div class="archives">
+		    -->
+		
+
+		
+
+
+
+
+		
+
+		
+				<!-- chind -->
+				<li class="item-post item">
+				  <span class="post-date">07-25</span>
+				  <a class="post-title archive-article-title" href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/">Java 知识点总结篇章</a>
+				</li>
+		
+
 	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/04/25/hello-world/" class="archive-article-date">
-	  <time datetime="2018-04-24T18:39:17.000Z" itemprop="datePublished">2018-04-25</time>
-	</a>
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/04/25/hello-world/">Hello World</a>
-    </h1>
-  
+		
 
-    </header>
-  </div>
-</article>
+		
+
+
+
+		
+		  
+		    <!--</div></section>-->
+		  
+		  
+		  <!--
+		  <section class="archives-wrap">
+		    <div class="archive-year-wrap">
+		      <h1><a href="" class="archive-year"></a></h1>
+		    </div>
+		    <div class="archives">
+		    -->
+		
+
+		
+
+
+
+
+		
+
+		
+				<!-- chind -->
+				<li class="item-post item">
+				  <span class="post-date">04-25</span>
+				  <a class="post-title archive-article-title" href="/2018/04/25/hello-world/">Hello World</a>
+				</li>
+		
+
 	
+
+
+			</ul>
+			</div>
+
 	
-		</div></section>
+		<!--</div></section>-->
 	
 
 	<!-- 页数指示器 -->
 	
-
 
 
 
@@ -315,15 +352,7 @@
           
    		
           
-     			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
-          
-   		
-          
      			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-          
-   		
-          
-     			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
           
    		
           
@@ -340,6 +369,18 @@
    		
           
             <li><a href="mailto:18802096060@163.com?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="wechat"><i class="fa fa-wechat" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="qq"><i class="fa fa-qq" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+     			  <li><a href="http://www.100wb.cn/archives/" target="_blank" rel="noopener" title="map-marker"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li> 
           
    		
    		</ul>
@@ -362,7 +403,7 @@
   
     <!-- 友情连接 -->
 <div class="widget-wrap">
-  <h3 class="widget-title"><i class="fa fa-link" aria-hidden="true" style="position: relative;top: 1px;"></i>友情链接</h3>
+  <h3 class="widget-title"><i class="fa fa-link" aria-hidden="true" style="position: relative;top: 1px;"></i>links</h3>
     <ul class='widget'>
 	
 		<li>
@@ -394,11 +435,11 @@
           </li>
         
           <li>
-            <a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/">Java 知识点总结篇章</a>
+            <a href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/">Hexo 安装部署配置详解</a>
           </li>
         
           <li>
-            <a href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/">Hexo 安装部署配置详解</a>
+            <a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/">Java 知识点总结篇章</a>
           </li>
         
       </ul>
@@ -434,10 +475,10 @@
   
 
   <div class="container">
-      	<div class="row">
-		<!--
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-		-->
+        <div class="row">
+        <!--
+        <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+         -->
 	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
 	      
 	      
@@ -467,12 +508,6 @@
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
-<style type="text/css">
-	#article-nav:before{ background: #999999; }      
-	.article-nav-caption{ color: #999999; }
-</style>
-
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -517,7 +552,7 @@
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -556,9 +591,6 @@
 
 
 
-
-
-<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
 
   </div>
 

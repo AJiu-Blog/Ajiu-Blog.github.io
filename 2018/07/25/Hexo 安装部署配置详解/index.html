@@ -8,23 +8,15 @@
   
   <meta name="keywords" content="Hexo" />
   
-
-  <!-- 站长平台收录 Begin -->
-
   
     <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
   
-
   
     <meta name="baidu-site-verification" content="sKKGW53Z6M" />
   
-
   
     <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
   
-
-  <!-- 站长平台收录 End -->
-
   <meta name="description" content="hexo API 一站安装https:&#x2F;&#x2F;blog.csdn.net&#x2F;erchowyo&#x2F;article&#x2F;details&#x2F;54407601 安装 hexo$ npm install -g hexo 初始化 hexo$ hexo init 安装 hexo 依赖$ npm install 生成 hexo 资源$ hexo generate hexo 服务$ hexo server  hiker: hex">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 安装部署配置详解">
@@ -50,12 +42,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -123,15 +117,15 @@
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 
-                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -165,19 +159,13 @@
         CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-	
-	// 绑定关闭搜索框设置外部滚动条有效
-	$('i.fa-times-circle').on("click",function(){ 
-		document.documentElement.style.overflow = 'scroll'; 
-	});	
 })(window);
 </script>
 
 <script src="/js/insight.js"></script>
 
 
-</div>
-</li>
+</div></li>
             </div>
           </div>
                 
@@ -188,59 +176,50 @@
 
 
 
-<style type="text/css">
-	
-	.menu_active{ border-bottom: 5px solid #39aa56; }
-	.menu_active:hover{ border-bottom: 0px; }
-</style>
-
-<script type="text/javascript">
-	
-
-	$('ul.hnav li').each(function(i, v){
-		if(i>0 && i < 5){
-			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
-				$(v).addClass('menu_active');
-			}
-		}
-	});
-</script>
-
       
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Hexo 安装部署配置详解" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;">
+
+<article id="post-Hexo 安装部署配置详解" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
+  
     
+
     
-      <header class="article-header">
-        
+
+    
+      
+        <header class="article-header">
+          
   
     <h1 class="thumb" class="article-title" itemprop="name">
       Hexo 安装部署配置详解
     </h1>
   
 
-      </header>
-    
-    <div class="article-meta">
+        </header>
       
+      <div class="article-meta">
+        
 	<a href="/2018/07/25/Hexo%20%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/" class="article-date">
 	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
 	</a>
 
-      
+        
     <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
 
-      
+        
 	<a class="article-views">
 	<span id="busuanzi_container_page_pv">
 		阅读量<span id="busuanzi_value_page_pv"></span>
 	</span>
 	</a>
 
-    </div>
+      </div>
+    
+
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="hexo-API-一站安装"><a href="#hexo-API-一站安装" class="headerlink" title="hexo API 一站安装"></a>hexo API 一站安装</h1><p><a href="https://blog.csdn.net/erchowyo/article/details/54407601" target="_blank" rel="noopener">https://blog.csdn.net/erchowyo/article/details/54407601</a></p>
@@ -325,19 +304,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/03/05/Git%20%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          Java 知识点总结篇章
+          Git 配置常用语句
         
       </div>
     </a>
   
   
-    <a href="/2018/04/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/07/25/Java%20%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E7%AF%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Java 知识点总结篇章</div>
     </a>
   
 </nav>
@@ -345,11 +324,19 @@ var a = new Donate({
   
 </article>
 
-<!-- Table of Contents -->
+
+
+<!-- Table of Contents1 -->
 
   <aside id="toc-sidebar">
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
+
+    
+        <!-- 集成页面百分比 -->
+        <div id="page_percentage"></div>
+    
+
     
         <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-API-一站安装"><span class="nav-number">1.</span> <span class="nav-text">hexo API 一站安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化-hexo"><span class="nav-number">3.</span> <span class="nav-text">初始化 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo-依赖"><span class="nav-number">4.</span> <span class="nav-text">安装 hexo 依赖</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成-hexo-资源"><span class="nav-number">5.</span> <span class="nav-text">生成 hexo 资源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-服务"><span class="nav-number">6.</span> <span class="nav-text">hexo 服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hiker-hexo-theme-API"><span class="nav-number">7.</span> <span class="nav-text">hiker: hexo-theme API</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建SSH密钥"><span class="nav-number">8.</span> <span class="nav-text">创建SSH密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开启-ssh-add"><span class="nav-number">9.</span> <span class="nav-text">开启 ssh-add</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加密钥"><span class="nav-number">10.</span> <span class="nav-text">添加密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-全局-Hexo"><span class="nav-number">11.</span> <span class="nav-text">安装 全局 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化-Hexo"><span class="nav-number">12.</span> <span class="nav-text">初始化 Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装更新"><span class="nav-number">13.</span> <span class="nav-text">安装更新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo-Server"><span class="nav-number">14.</span> <span class="nav-text">安装 Hexo Server</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行-Hexo-服务"><span class="nav-number">15.</span> <span class="nav-text">运行 Hexo 服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo-提交方式为-Git"><span class="nav-number">16.</span> <span class="nav-text">安装 Hexo 提交方式为 Git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-环境配置"><span class="nav-number">17.</span> <span class="nav-text">Hexo 环境配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构建-Hexo-环境"><span class="nav-number">18.</span> <span class="nav-text">构建 Hexo 环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-常用语句"><span class="nav-number">19.</span> <span class="nav-text">Hexo 常用语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-使用填坑记录"><span class="nav-number">20.</span> <span class="nav-text">Hexo 使用填坑记录</span></a></li></ol>
     
@@ -364,10 +351,10 @@ var a = new Donate({
   
 
   <div class="container">
-      	<div class="row">
-		<!--
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-		-->
+        <div class="row">
+        <!--
+        <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+         -->
 	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
 	      
 	      
@@ -397,12 +384,6 @@ var a = new Donate({
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
-<style type="text/css">
-	#article-nav:before{ background: #999999; }      
-	.article-nav-caption{ color: #999999; }
-</style>
-
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -447,7 +428,7 @@ var a = new Donate({
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -490,9 +471,6 @@ var a = new Donate({
 
 
 
-
-
-<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
 
   </div>
 

@@ -6,23 +6,15 @@
   <title>分类 | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-
-  <!-- 站长平台收录 Begin -->
-
   
     <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
   
-
   
     <meta name="baidu-site-verification" content="sKKGW53Z6M" />
   
-
   
     <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
   
-
-  <!-- 站长平台收录 End -->
-
   <meta property="og:type" content="website">
 <meta property="og:title" content="分类">
 <meta property="og:url" content="http://100wb.cn/categories/index.html">
@@ -45,12 +37,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -120,15 +114,15 @@
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 
-                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -162,19 +156,13 @@
         CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-	
-	// 绑定关闭搜索框设置外部滚动条有效
-	$('i.fa-times-circle').on("click",function(){ 
-		document.documentElement.style.overflow = 'scroll'; 
-	});	
 })(window);
 </script>
 
 <script src="/js/insight.js"></script>
 
 
-</div>
-</li>
+</div></li>
             </div>
           </div>
                 
@@ -185,137 +173,119 @@
 
 
 
-<style type="text/css">
-	
-	.menu_active{ border-bottom: 5px solid #39aa56; }
-	.menu_active:hover{ border-bottom: 0px; }
-</style>
-
-<script type="text/javascript">
-	
-
-	$('ul.hnav li').each(function(i, v){
-		if(i>0 && i < 5){
-			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
-				$(v).addClass('menu_active');
-			}
-		}
-	});
-</script>
-
       
             
       <div id="content" class="outer">
         
           <section id="main" style="float:none;"><style type="text/css">
 
-	div.archives-tags-wrap{
-		line-height: 27px;
-		width: 837px;
-		height: 160px;
-	}
+    div.archives-tags-wrap{
+        line-height: 27px;
+        width: 837px;
+        height: 160px;
+    }
 
-	blockquote{
-		height: 189px;
-	}
+    blockquote{
+        height: 189px;
+    }
 
-	blockquote > a {
-		float: left;
-	}
+    blockquote > a {
+        float: left;
+    }
 
 </style>
 
 <div class="archives-wrap" style="margin: 0px;">
-	<div class="col-lg-10 col-lg-offset-1 col-md-10">
-		
-		<!-- 分类云 -->
-		
-		<div class="archives-tags-wrap">
-			
-			<blockquote>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/">Battery Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/">Billing&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/">Break Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/">Chain Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/">Clutch Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/">Dealer attitude&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/">Electrical Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/">Engine Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/">Git&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/">Handle Bar Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/">Happy&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/">Hello World&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Hexo/">Hexo&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/">Jerking&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/">Jerking Problem&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/">Low Mileage&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/">Noise&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/">Poor Pickup&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/">Running Off&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/">Service Quality&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/">Silencer Problem&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/SpringBoot/">SpringBoot&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/SpringBoot/SpringClould/">SpringClould&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/">Starting Trouble&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/">Suspension Related&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/">Vehicle Noise&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/">Vibration&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/">Washing&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/java/">java&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/">大数据通缉&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/开发工具/">开发工具&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/测试工具/">测试工具&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/java/知识点总结/">知识点总结&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/算法核算/">算法核算&nbsp;|</a>
-				
-						<a class="category-list-link" href="/categories/Git/设计模式/">设计模式&nbsp;|</a>
-				
+    <div class="col-lg-10 col-lg-offset-1 col-md-10">
+        
+        <!-- 分类云 -->
+        
+        <div class="archives-tags-wrap">
+            
+            <blockquote>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/">Battery Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/">Billing&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/">Break Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/">Chain Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/">Clutch Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/">Dealer attitude&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/">Electrical Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/">Engine Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/">Git&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/">Handle Bar Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/">Happy&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/">Hello World&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Hexo/">Hexo&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/">Jerking&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/">Jerking Problem&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/">Low Mileage&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/">Noise&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/">Poor Pickup&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/">Running Off&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/">Service Quality&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/">Silencer Problem&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/SpringBoot/">SpringBoot&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/SpringBoot/SpringClould/">SpringClould&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/">Starting Trouble&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/">Suspension Related&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/">Vehicle Noise&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/">Vibration&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/">Washing&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/java/">java&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/大数据通缉/">大数据通缉&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/开发工具/">开发工具&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/测试工具/">测试工具&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/java/知识点总结/">知识点总结&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/算法核算/">算法核算&nbsp;|</a>
+                
+                        <a class="category-list-link" href="/categories/Git/设计模式/">设计模式&nbsp;|</a>
+                
             </blockquote>
-			
-		</div>
-		
-		
-		<script type="text/javascript" charset="utf-8">
+            
+        </div>
+        
+        
+        <script type="text/javascript" charset="utf-8">
 
-			$("div.archives-tags-wrap > blockquote > a:last").text($("div.archives-tags-wrap > blockquote > a:last").text().replace('|',''));
-			
-		</script>
-		
-		<!-- 分类列表 -->
+            $("div.archives-tags-wrap > blockquote > a:last").text($("div.archives-tags-wrap > blockquote > a:last").text().replace('|',''));
+            
+        </script>
+        
+        <!-- 分类列表 -->
 
         
         <div class="archives-wrap">
@@ -1353,7 +1323,7 @@
             </div>
         </div>
         
-	</div>
+    </div>
 </div>
 </section>
         
@@ -1363,10 +1333,10 @@
   
 
   <div class="container">
-      	<div class="row">
-		<!--
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-		-->
+        <div class="row">
+        <!--
+        <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+         -->
 	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
 	      
 	      
@@ -1396,12 +1366,6 @@
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
-<style type="text/css">
-	#article-nav:before{ background: #999999; }      
-	.article-nav-caption{ color: #999999; }
-</style>
-
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -1446,7 +1410,7 @@
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -1485,9 +1449,6 @@
 
 
 
-
-
-<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
 
   </div>
 

@@ -8,23 +8,15 @@
   
   <meta name="keywords" content="测试工具" />
   
-
-  <!-- 站长平台收录 Begin -->
-
   
     <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ" />
   
-
   
     <meta name="baidu-site-verification" content="sKKGW53Z6M" />
   
-
   
     <meta name="360-site-verification" content="cfffcb00d43341fdf1986241d729302a" />
   
-
-  <!-- 站长平台收录 End -->
-
   <meta name="description" content="WebService 测试工具1. postman SoapUI  2. rbac star 法则">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WebService 测试工具">
@@ -50,12 +42,14 @@
   
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -123,15 +117,15 @@
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 
-                  <li> <a class="main-nav-link" i:og="/" href="/">首页</a> </li>
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/archives" href="/archives">归档</a> </li>
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/categories" href="/categories">分类</a> </li>
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/tags" href="/tags">标签</a> </li>
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
                 
-                  <li> <a class="main-nav-link" i:og="/about" href="/about">关于</a> </li>
+                  <li> <a class="main-nav-link" href="/about">关于</a> </li>
                 
                   <li><div id="search-form-wrap">
 
@@ -165,19 +159,13 @@
         CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-	
-	// 绑定关闭搜索框设置外部滚动条有效
-	$('i.fa-times-circle').on("click",function(){ 
-		document.documentElement.style.overflow = 'scroll'; 
-	});	
 })(window);
 </script>
 
 <script src="/js/insight.js"></script>
 
 
-</div>
-</li>
+</div></li>
             </div>
           </div>
                 
@@ -188,59 +176,50 @@
 
 
 
-<style type="text/css">
-	
-	.menu_active{ border-bottom: 5px solid #39aa56; }
-	.menu_active:hover{ border-bottom: 0px; }
-</style>
-
-<script type="text/javascript">
-	
-
-	$('ul.hnav li').each(function(i, v){
-		if(i>0 && i < 5){
-			if($($(v).html()).attr('i:og').substr(1) == $($('meta')[6]).attr('content')){
-				$(v).addClass('menu_active');
-			}
-		}
-	});
-</script>
-
       
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-20190605" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;">
+
+<article id="post-20190605" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
+  
     
+
     
-      <header class="article-header">
-        
+
+    
+      
+        <header class="article-header">
+          
   
     <h1 class="thumb" class="article-title" itemprop="name">
       WebService 测试工具
     </h1>
   
 
-      </header>
-    
-    <div class="article-meta">
+        </header>
       
+      <div class="article-meta">
+        
 	<a href="/2019/06/05/20190605/" class="article-date">
 	  <time datetime="2019-06-04T22:39:17.000Z" itemprop="datePublished">2019-06-05</time>
 	</a>
 
-      
+        
     <a class="article-category-link" href="/categories/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">测试工具</a>
 
-      
+        
 	<a class="article-views">
 	<span id="busuanzi_container_page_pv">
 		阅读量<span id="busuanzi_value_page_pv"></span>
 	</span>
 	</a>
 
-    </div>
+      </div>
+    
+
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="WebService-测试工具"><a href="#WebService-测试工具" class="headerlink" title="WebService 测试工具"></a>WebService 测试工具</h3><pre><code>1. postman SoapUI
@@ -306,11 +285,19 @@ var a = new Donate({
   
 </article>
 
-<!-- Table of Contents -->
+
+
+<!-- Table of Contents1 -->
 
   <aside id="toc-sidebar">
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
+
+    
+        <!-- 集成页面百分比 -->
+        <div id="page_percentage"></div>
+    
+
     
         <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#WebService-测试工具"><span class="nav-number">1.</span> <span class="nav-text">WebService 测试工具</span></a></li></ol>
     
@@ -325,10 +312,10 @@ var a = new Donate({
   
 
   <div class="container">
-      	<div class="row">
-		<!--
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-		-->
+        <div class="row">
+        <!--
+        <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+         -->
 	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
 	      
 	      
@@ -358,12 +345,6 @@ var a = new Donate({
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
-
-<style type="text/css">
-	#article-nav:before{ background: #999999; }      
-	.article-nav-caption{ color: #999999; }
-</style>
-
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -408,7 +389,7 @@ var a = new Donate({
     });
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -451,9 +432,6 @@ var a = new Donate({
 
 
 
-
-
-<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
 
   </div>
 
