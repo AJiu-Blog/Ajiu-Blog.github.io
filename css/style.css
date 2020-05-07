@@ -129,7 +129,7 @@ body {
   text-rendering: optimizelegibility;
 }
 ::selection {
-  background: #42b983;
+  background: #00aced;
   color: #fff;
 }
 .article-entry h2,
@@ -137,7 +137,7 @@ body {
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
-  color: #42b983;
+  color: #00aced;
 }
 #rocket {
   position: fixed;
@@ -460,12 +460,12 @@ body {
   font-weight: bold;
 }
 .navigater-list>a:hover {
-  color: #42b983;
-  border-bottom: 5px solid #42b983;
+  color: #00aced;
+  border-bottom: 5px solid #00aced;
   text-decoration: none;
 }
 .hr {
-  background: #42b983;
+  background: #00aced;
 }
 .carousel-fade .carousel-inner .item {
   max-width: 100%;
@@ -570,14 +570,14 @@ body {
 }
 .navbar-nav>li>a:hover,
 .navbar-nav>li>a:focus {
-  border-bottom: 5px solid #42b983;
-  color: #42b983 !important;
+  border-bottom: 5px solid #00aced;
+  color: #00aced !important;
 }
 .navbar-inner {
   min-height: 90px;
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  border-top: 2px solid #42b983;
+  border-top: 2px solid #00aced;
 }
 .brand {
   float: left;
@@ -653,7 +653,7 @@ body {
 }
 #search-form-wrap .search-form .search-form-submit:hover,
 #search-form-wrap .search-form .search-form-submit:focus {
-  color: #42b983;
+  color: #00aced;
 }
 .search-form-input,
 .search-form-input.ins-search-input,
@@ -784,7 +784,7 @@ body {
   }
 }
 .article-date:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .article-category {
   text-align: center;
@@ -817,7 +817,7 @@ body {
   }
 }
 .article-category-link:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .article-views {
   text-align: center;
@@ -833,7 +833,7 @@ body {
   }
 }
 .article-views:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .article-date,
 .article-category-link,
@@ -897,7 +897,7 @@ body {
   transition: color 0.2s;
 }
 a.article-title:hover {
-  color: #42b983;
+  color: #00aced;
   text-decoration: none;
 }
 .article-entry {
@@ -945,7 +945,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-entry a:hover {
-  color: #42b983;
+  color: #00aced;
   text-decoration: none;
 }
 .article-entry ul,
@@ -984,7 +984,7 @@ a.article-title:hover {
   font-size: 1.1em;
   color: rgba(44,44,44,0.6);
   margin: 1.4em 0px;
-  border-left: 2px solid #42b983;
+  border-left: 2px solid #00aced;
   background: rgba(208,211,248,0.15);
 }
 .article-entry blockquote p {
@@ -1076,7 +1076,7 @@ a.article-title:hover {
   border-radius: 15px;
   background: #f9fbfd;
   border: 1px solid #eef1f8;
-  color: #42b983;
+  color: #00aced;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1085,7 +1085,7 @@ a.article-title:hover {
   transition: all 0.2s ease-in-out;
 }
 .article-more-link a:hover {
-  background: #42b983;
+  background: #00aced;
   color: #fff;
   text-decoration: none;
 }
@@ -1421,7 +1421,7 @@ a.article-title:hover {
   background-color: transparent !important;
 }
 .nav .active > a {
-  color: #42b983;
+  color: #00aced;
 }
 .nav-link {
   font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Microsoft Yahei Light', 'STHeitiSC-Light', 'Arial', sans-serif;
@@ -1429,7 +1429,7 @@ a.article-title:hover {
   padding: 1px !important;
 }
 .nav-link:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .nav-child {
   margin-left: 1em;
@@ -1477,10 +1477,10 @@ a.article-title:hover {
   font-size: 1.3em;
 }
 .archive-year {
-  color: #42b983;
+  color: #00aced;
 }
 .archive-year:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .archive-year:before {
   font-family: "FontAwesome";
@@ -1497,7 +1497,7 @@ a.article-title:hover {
   font-weight: bold;
   color: #33363b;
   text-align: center;
-  border-left: 0px solid #42b983;
+  border-left: 0px solid #00aced;
   background: rgba(208,211,248,0.15);
 }
 .archives-tags-wrap blockquote a {
@@ -1505,14 +1505,14 @@ a.article-title:hover {
   margin: 0.2em;
 }
 .archives-tags-wrap blockquote a:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .archive-tag {
   text-transform: none;
-  color: #42b983;
+  color: #00aced;
 }
 .archive-tag:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .archive-tag:before {
   font-family: "FontAwesome";
@@ -1527,9 +1527,9 @@ a.article-title:hover {
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.7em;
-  color: #42b983;
+  color: #00aced;
   text-align: left;
-  border-left: 0px solid #42b983;
+  border-left: 0px solid #00aced;
   background: rgba(208,211,248,0.15);
 }
 .archives-category-wrap blockquote a {
@@ -1537,7 +1537,7 @@ a.article-title:hover {
   margin: 0.2em;
 }
 .archives-category-wrap blockquote a:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .archives-category-wrap blockquote a:before {
   font-family: "FontAwesome";
@@ -1546,7 +1546,7 @@ a.article-title:hover {
 }
 .archive-category {
   text-transform: none;
-  color: #42b983;
+  color: #00aced;
 }
 .archive-category:before {
   font-family: "FontAwesome";
@@ -1597,7 +1597,7 @@ a.article-title:hover {
   color: #444;
 /*transition: color 0.2s*/
   line-height: 1.6rem;
-  border-left: 1px dashed #42b983;
+  border-left: 1px dashed #00aced;
   padding-left: 8px;
   margin-left: 8px;
 }
@@ -1607,10 +1607,10 @@ a.article-title:hover {
   }
 }
 .archive-article-title:hover {
-  color: #42b983;
+  color: #00aced;
 }
 a.archive-article-title:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .archive-article-footer {
   margin-top: 1em;
@@ -1627,7 +1627,7 @@ a.archive-article-title:hover {
   font-family: "futura-pt", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
 }
 .archive-article-date:hover {
-  color: #42b983;
+  color: #00aced;
 }
 #page-nav {
   margin: 50px auto;
@@ -1655,7 +1655,7 @@ a.archive-article-title:hover {
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #42b983;
+  background: #00aced;
   color: #fff;
 }
 #page-nav .prev {
@@ -1693,7 +1693,7 @@ a.archive-article-title:hover {
   text-decoration: none;
 }
 #footer a:hover {
-  color: #42b983;
+  color: #00aced;
   text-decoration: none;
 }
 #footer-info {
@@ -2062,7 +2062,7 @@ pre .xml .cdata {
   display: inline-block;
 }
 .ins-close:hover {
-  color: #42b983;
+  color: #00aced;
 }
 .ins-search-container {
   left: 50%;
@@ -2137,7 +2137,7 @@ pre .xml .cdata {
 .ins-section .ins-search-item:hover,
 .ins-section .ins-search-item.active {
   color: #fff;
-  background: #42b983;
+  background: #00aced;
 }
 .ins-section .ins-search-item:hover .ins-slug,
 .ins-section .ins-search-item.active .ins-slug,
@@ -2173,7 +2173,7 @@ pre .xml .cdata {
   text-decoration: none;
 }
 .widget a:hover {
-  color: #42b983;
+  color: #00aced;
   text-decoration: none;
 }
 .widget ul ul,
@@ -2659,7 +2659,7 @@ ul.list-post:before {
 [class^="icon-"]:before {
   position: relative;
   top: -2px;
-  color: #42b983;
+  color: #00aced;
 }
 #page_percentage {
   display: inline-block;
@@ -2667,6 +2667,6 @@ ul.list-post:before {
   left: 50px;
 }
 #page_percentage {
-  color: #42b983;
+  color: #00aced;
   font-weight: bold;
 }
