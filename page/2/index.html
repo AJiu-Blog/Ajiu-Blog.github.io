@@ -101,7 +101,7 @@
                     <img id="carousel-img0" src="/css/images/sample.jpg">
                   </div>
 
-                  <!-- 自适应大图 -->
+                  <!-- 自适应大图1 -->
                   <script>
                       var img0 = new Image();
                       var imageTag0 = document.getElementById("carousel-img0");
@@ -175,11 +175,64 @@
     
 
         
-          <div class="homelogoback"  style="border: 1px solid #404040;" >
+          <div class="homelogoback"  style="border: 1px solid #404040; width: 372px;height: 187px; text-align: left;" >
+
+            <!--
             <h1><a href="#content" id="logo"></a></h1>
             <h3></h3>
             <h5>AJiu</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> --
+            -->
+
+            <span id="subtitle"></span>
+
+            <script>
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://cdn.jsdelivr.net/npm/typed.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+  
+
+    var subtitleEffect = true;
+    
+    var subtitleType = function () {
+      var subtitleEffect = !subtitleEffect;
+      fetch('https://v1.hitokoto.cn')
+        .then(function (res) {
+          return res.json()
+        })
+        .then(function (data) {
+          if (subtitleEffect) {
+            var from = '出自 ' + data.from
+            var sub = '^1000如果在这里退缩了一步<br/><br/> ^1500 那么过去那些重要的誓言，约定，全部都消失会不见<br/><br/> ^1500 而我再也无法回到这里<br/><br/> ^1500 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;-&ensp;罗罗诺亚&ensp;·&ensp;索隆'.length == 0 ? new Array() : '^1000如果在这里退缩了一步<br/><br/> ^1500 那么过去那些重要的誓言，约定，全部都消失会不见<br/><br/> ^1500 而我再也无法回到这里<br/><br/> ^1500 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;-&ensp;罗罗诺亚&ensp;·&ensp;索隆'.split(',')
+            var both = sub.unshift(data.hitokoto, from)
+            var typed = new Typed('#subtitle', {
+              strings: sub,
+              startDelay: 300,
+              typeSpeed: 150,
+              loop: false,
+              backSpeed: 50,
+            })
+          } else {
+            document.getElementById('subtitle').innerHTML = data.hitokoto
+          }
+        })
+        .catch(function (err) {
+          console.error(err)
+        })
+      }
+      window.addEventListener('load', subtitleType)
+
+    
+
+  
+
+</script>
+
+
           </div>
         
     
