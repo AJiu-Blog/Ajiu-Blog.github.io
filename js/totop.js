@@ -35,7 +35,7 @@ $("#menu-switch").click(function() {
         setTimeout(function () { 
             $('#main > article').animate({"width": "100%"}, 0, null, function(){
                 $('#articleInner .article-img-inner').animate(
-                    {'line-height': '40px'}, 100, null);
+                    {'line-height': '50px'}, 100, null);
             });
         }, 0);
     }
