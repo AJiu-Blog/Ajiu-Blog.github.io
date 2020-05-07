@@ -845,7 +845,6 @@ body {
   text-transform: inherit;
   letter-spacing: 1px;
   color: #555;
-  margin: 0 1rem;
 }
 @media screen and (max-width: 479px) {
   .article-date,
@@ -857,6 +856,9 @@ body {
   .widget-title {
     letter-spacing: 0.5px;
   }
+}
+.article-category-link-page {
+  margin: 0 1rem;
 }
 .article-header {
   text-align: center;
